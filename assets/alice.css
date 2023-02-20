@@ -1,25 +1,79 @@
+@font-face {
+    font-family: lxgw;
+    src: url("./alice/LXGWWenKaiGB-Regular.ttf");
+}
+
+@font-face {
+    font-family: firacode;
+    src: url("./alice/FiraCode-Regular.ttf");
+}
+
+p {
+    font-family: firacode, lxgw, sans-serif;
+}
+
+pre {
+    font-family: firacode !important;
+    font-size: 14px !important;
+    word-spacing: normal !important;
+}
+
+#write {
+    max-width: 860px;
+    margin: 0 auto;
+    padding: 30px;
+    padding-bottom: 100px;
+    color: var(--alice-font-color);
+}
+
+@media only screen and (min-width: 1400px) {
+    #write {
+        max-width: 1024px;
+    }
+}
+
+@media only screen and (min-width: 1800px) {
+    #write {
+        max-width: 1200px;
+    }
+}
+
+
+
+
+
+
+
 html {
     --alice-bg-color: rgb(249, 245, 232);
     --alice-title-color: #0079D2;
     --alice-font-color: rgb(102, 55, 24);
     --alice-important-color: rgb(162, 42, 42);
     background: var(--alice-bg-color);
-    color: var(--alice-font-color);
-    font-size: 16px;
+    font-size: 18px;
     font-family: "Helvetica";
 }
 
 h1 {
+    margin: 0 auto;
     margin-top: 1.2em;
-    margin-bottom: 0.6em;
+    margin-bottom: 0.4em;
+    padding: 4px 2em;
     line-height: 1.35;
     font-size: 2.25em;
+    text-align: center;
+    background-color: rgb(0, 132, 255);
+    width: max-content !important;
+    color: #fff;
 }
 
-h1,
+h2 {
+    border-left: 3px solid rgba(15, 76, 129, 1);
+    padding-left: 1em;
+}
+
 h2,
-h3,
-h4 {
+h3 {
     color: var(--alice-title-color);
 }
 
@@ -33,6 +87,7 @@ code {
     color: #48b456;
     padding: 0 5px;
     margin: 0 2px;
+    font-family: firacode;
     border-radius: 5px;
 }
 
@@ -62,11 +117,11 @@ li span {
 }
 
 h1 {
-    font-size: 1.45em;
+    font-size: 1.5em;
 }
 
 h2 {
-    font-size: 1.35em;
+    font-size: 1.3em;
 }
 
 h3 {
@@ -74,23 +129,26 @@ h3 {
 }
 
 h4 {
-    font-size: 1.15em;
+    font-size: 1.1em;
+
 }
 
 h5 {
-    font-size: 1.1em;
+    font-size: 1.05em;
+    color: #a22a2a;
+    font-weight: bold;
 }
 
 h6 {
-    font-size: 1em
+    font-size: 1em;
+    font-family: lxgw;
 }
 
 h1,
 h2,
 h3,
 h4,
-h5,
-h6 {
+h5 {
     font-family: "Helvetica Neue", Helvetica, sans-serif;
 }
 
